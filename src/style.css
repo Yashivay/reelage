@@ -1,0 +1,26 @@
+@charset "utf-8";
+.MainBody {
+  font-family: "Calibri" !important;
+  padding: 0px;
+  margin: 0px;
+  background-color: #E4E7EC;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.signUpImg img {
+  width: 100%;
+}
+
+
+.SignBody {
+  /* width: 70vw; */
+  margin: auto;
+  overflow: hidden;
+  background-color: #fff;
+  /* width: 1440px; */
+  height:80vh;
+  /* width:100vh; */
+  border-radius: 20px;
+}
