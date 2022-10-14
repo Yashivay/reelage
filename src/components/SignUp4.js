@@ -1,6 +1,10 @@
+// import logo from './logo.svg';
+// import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import Form from 'react-bootstrap/Form';
-import logo from './images/signup3img.png';
+import logo from './images/signUpImg4.png';
+
 import Rlogo from './images/logo.png';
 import back from './images/back.png';
 
@@ -27,7 +31,7 @@ function App() {
               </a>
 
                 <h1>Verification</h1>
-                <p>We just sent a code to <span> johan@gmail.com </span></p>
+                <p>We just sent a code to <span> 0123 456 7890 </span></p>
               </div>
 
               <div class="form-group">
@@ -47,14 +51,16 @@ function App() {
               </div>
 
             <button type="submit" class="btn btn-danger formSbmitBtn"> Signup </button>    
-            <small id="emailHelp" class="form-text text-muted VTwoText">Verify with Phone</small>                  
+            <a href="#">  
+              <small id="emailHelp" class="form-text text-muted VTwoText">Verify with Email</small>     
+            </a>               
             </form>
           
               </div>
             </div> 
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">          
                 {/* <img src="signup3img.png"/> */}
-                <div class="signUpImg bg3Img"> 
+                <div class="signUpImg bg4Img"> 
                   <img src={logo} className="App-logo" alt="logo" />  
                 </div> 
               </div> 

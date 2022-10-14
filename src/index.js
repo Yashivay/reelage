@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// import '//node_modules/bootstrap/dist/css/bootstrap.min.css';
+//  import '//node_modules/bootstrap/dist/css/bootstrap.min.css';
 //  import '//bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 
 
-import App from './/components/SignUp3';
+import App from './/components/SignUp';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

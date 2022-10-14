@@ -1,15 +1,13 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';  
 import Form from 'react-bootstrap/Form';
-import logo from './signUp.png';
+import logo from './images/signUpImg5.png';
+import back from './images/back.png';
 
 import Rlogo from './images/logo.png';
-
-import user from './images/user.png';
 import email from './images/email.png';
-import phone from './images/phone.png';
 import password from './images/password.png';
 import fb from './images/fb.png';
 import google from './images/google.png';
@@ -21,46 +19,51 @@ function App() {
       <div className="container"> 
         <img src={Rlogo} className="rlogo" alt="rlogo" />  
         
-        <div className="SignBody"> 
+        <div className="SignBody SignBody5"> 
 
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div className="SignFormBox">   
+              <div className="SignFormBox SignFormBox5">   
             <form>
                           
               <div className='SignFormBoxHeader'> 
-                <h1> Sign up </h1>
+              <a href="#"> 
+                <div className='backBox'>
+                  <img src={back} className="rlogo" alt="rlogo" /> 
+                  <p> Back </p>
+                </div>
+              </a>
+
+                <h1> Sign in </h1>
                 <p>Please enter your details</p>
               </div>
 
               <div class="form-group">
-                <label for="name">Name</label>
-                <img src={user} className="yInputIcon" alt="yInputIcon" />    
-                <Form.Control type="text" class="form-control yInput" id="name" aria-describedby="emailHelp" placeholder="Johan Doe"/>      
-              </div>
-
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email</label>
+                <label for="name">Email</label>
                 <img src={email} className="yInputIcon" alt="yInputIcon" /> 
-                <Form.Control type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Johandoe@gmail.com"/>    
-              </div>
-
-              <div class="form-group">
-                <label for="phonenumber">Phone Number</label>
-                <img src={phone} className="yInputIcon" alt="yInputIcon" /> 
-                <Form.Control type="number" class="form-control" id="phonenumber" aria-describedby="emailHelp" placeholder="+91 0123456 7890"/>
+                <Form.Control type="email" class="form-control yInput" id="name" aria-describedby="emailHelp" placeholder="Johandoe@gmail.com"/>      
               </div>
 
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <img src={password} className="yInputIcon2" alt="yInputIcon" /> 
                 <Form.Control  type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
-                <small id="emailHelp" class="form-text text-muted smf"> Must be at least 8 characters.</small>   
+                <a href="#">  
+                <small id="emailHelp" class="form-text text-muted VOneText"><span> Forgot Password </span></small>  
+                </a>          
               </div>   
 
-                <button type="submit" class="btn btn-danger formSbmitBtn"> Next </button>
+                <button type="submit" class="btn btn-danger formSbmitBtn"> Sign In </button>
                 <div className='textCenter mtyfnt'>
-                  <small id="emailHelp" class="form-text text-muted">Or sign up with</small>
+                <a href="#">  
+                <small id="emailHelp" class="form-text text-muted VTwoText">Havn’t account?<span  class="textRed"> Sign up </span></small>  
+                </a>       
+                </div>
+
+                <div className='textCenter mtyfnt'>
+                <a href="#">  
+                <small id="emailHelp" class="form-text text-muted VTwoText mty">Or sign in with</small>  
+                </a>       
                 </div>
 
                 <div className='signWithBtnBx'>                   
@@ -79,11 +82,9 @@ function App() {
             </div> 
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">          
                 {/* <img src="signUp.png"/> */}
-                <div class="signUpImg bg1Img"> 
+                <div class="signUpImg bg5Img"> 
                   <img src={logo} className="App-logo" alt="logo" />  
                 </div>    
-
-                
 
               </div> 
           </div>

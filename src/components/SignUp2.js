@@ -1,20 +1,13 @@
-// import logo from './logo.svg';
-// import './App.css';
-
 import 'bootstrap/dist/css/bootstrap.min.css';  
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import logo from './images/signup2img.png';
 
 import Rlogo from './images/logo.png';
-// import RlogoS from './svg/rlgo.svg';
 
 import calender from './images/calender.png';
 import gender from './images/gender.png';
 import country from './images/country.png';
-import password from './images/password.png';
 import back from './images/back.png';
-import google from './images/google.png';
 
 
 function App() {
@@ -78,7 +71,7 @@ function App() {
             </div> 
               <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">          
                 {/* <img src="signUp.png"/> */}
-                <div class="signUpImg"> 
+                <div class="signUpImg bg2Img">
                   <img src={logo} className="App-logo" alt="logo" />  
                 </div>    
               </div> 
