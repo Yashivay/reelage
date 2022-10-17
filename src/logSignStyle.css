@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+body {
+  background: #E4E7EC;
+}
+
+.MainBody {
+  padding: 0px;
+  margin: 0px;
+  background-color: #E4E7EC;
+  height: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  padding: 60px 0px;
+}
+
+.signUpImg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.signUpImg {
+  height: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.bg5Img{
+  background-image: url('http://localhost:3000/static/media/signUpImg5.3a5979f4e8bb799a0aad.png');
+}
+
+.bg4Img{
+  background-image: url('http://localhost:3000/static/media/signUpImg4.77d891c445c92ddd1b12.png');
+}
+
+.bg2Img{
+  background-image: url('http://localhost:3000/static/media/signup2img.a0ca65b559984f4a657b.png');
+}
+
+.bg3Img{
+  background-image: url('http://localhost:3000/static/media/signup3img.7d8daef32d95d93fc3f8.png');
+}
+
+.bg1Img{
+  background-image: url('http://localhost:3000/static/media/signUp.42d3f30405ea844279dc.png');
+}
+
+
+
+.SignBody {
+  /* width: 70vw; */
+  margin: auto;
+  overflow: hidden;
+  background-color: #fff;
+  /* width: 1440px; */ 
+  /* height:80vh; */
+  border-radius: 20px;
+}
+
+.SignFormBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 10%;
+  justify-content: space-between;
+  padding: 60px 80px 50px 80px;
+}
+
+.SignFormBoxHeader {
+  margin-bottom: 30px;
+}
+
+.SignFormBoxHeader h1 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.SignFormBoxHeader p {
+  color: #707B87;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+.SignFormBox form .form-group label {
+  font-size: 14px;
+  color: #707B87;
+  line-height: 27px;
+}
+
+.SignFormBox form {
+  width: 100%;
+}
+
+.form-group {
+  position: relative;
+}
+
+.yinput {
+  padding-left: 40px;
+}
+
+.yInputIcon {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 1rem;
+}
+
+.yInputIcon, .yInputIcon2 {
+  width: 18px;
+  top: 2.8rem;
+}
+
+.yInputIcon2 {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 1rem;
+}
+
+.SignFormBox form .form-group {
+  margin-top: 15px;
+}
+
+
+
+.SignFormBox form .form-group .select {
+  padding-left: 38px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.SignFormBox form .form-group .form-control {
+  font-size: 0.9rem;
+  height: 52px;
+  padding-left: 45px;
+  font-size: 17px;
+  color: #000;
+  font-weight: 500;
+}
+
+
+
+.smf{
+  font-size: 12px;
+}
+
+.formSbmitBtn {
+  width: 100%;
+  border-radius: 40px;
+  margin-top: 30px;
+  padding: 11.7px;
+  background: #DE0600;
+}
+
+.rlogo {
+  width: 160px;
+  margin-bottom: 25px;
+}
+
+.signWithBtnBx {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mtyfnt {  
+  margin: 12px 10px;
+}
+
+.signWithBtn img {
+  width: 1em;
+}
+
+img.fbicn {
+  width: 0.6em;
+}
+
+.signWithBtn {
+  display: flex;
+  width: 49%;
+  border: 1px solid #BDBDBD;
+  padding: 14px 15px;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.signWithBtn p {
+  margin-bottom: 0;
+  font-size: 12.9px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.SignFormBox form a {
+  text-decoration: none;
+}
+
+/*--- signup2 ---*/
+
+.SignBody2 .SignFormBox form .form-group input{
+  color:#000;
+
+}
+
+.SignBody2 .SignFormBox form .form-group input, .SignBody2 .SignFormBox form .form-group .select {
+  padding-left: 46px;
+  height: 52px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.SignFormBox form .form-group label {
+  font-size: 16px;
+  color: #707B87;
+  line-height: 27px;
+}
+
+.SignBody2 .yInputIcon, .yInputIcon2 {
+  width: 17px;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1rem; 
+}
+
+.SignBody2 {
+  /* width: 70vw; */
+  margin: auto;
+  overflow: hidden;
+  background-color: #fff;
+  /* width: 1440px; */
+  height: 80vh;
+  border-radius: 20px;
+  display: grid;
+  position: relative;
+}
+
+.backBox img {
+  width: 22px;
+  height: 19px;
+  margin-right: 7px;
+  margin-top: 1px;
+}
+
+.backBox {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  height: 40px;
+  left: 40px;
+}
+
+.backBox p {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #000;
+}
+
+.SignBody2 .signUpImg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.SignBody2 .signUpImg {
+  height: 100%;
+  position: relative;
+  /* background-image: url("http://localhost:3000/static/media/signup2img.a0ca65b559984f4a657b.png"); */
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*-- signup 3 --*/
+
+.SignBody3 .SignFormBox form .form-group input {
+  width: 12.5%;
+  padding: 3px;
+  height: 57px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.d-flexY {
+  display: flex!important;
+  justify-content: space-between;
+}
+
+.SignFormBoxHeader p span {
+  color: #000;
+  font-weight: 600;
+}
+
+.VOneText {
+  text-align: right;
+  width: 100%;
+  float: right;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.VOneText span{
+ color:#DE0600;
+}
+
+.VTwoText {
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
+
+/*-- signup 5 --*/
+
+.SignFormBox5{
+  position:relative;
+}
+
+.SignFormBox5 .signWithBtn img {
+  width: 1em;
+  margin-right: 10px;
+}
+
+.SignFormBox5 .signWithBtn .fbicn {
+  width: 0.6em;
+  margin-right: 10px;
+}
+
+.SignFormBox5 .signWithBtn {
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.SignFormBox5 .signWithBtnBx {
+  display: initial;
+  justify-content: center;
+}
+
+.signUpImg img {
+  width: 100%;
+  height: initial;
+  position: absolute;
+  display:none;
+}
+
+.SignBody5{
+  /* height:80vh!important; */
+}
+
+.SignBody5 .SignFormBox {
+  padding: 140px 80px 120px 80px;
+}
+
+.SignBody5 .SignFormBox form .form-group .form-control {
+  font-size: 1rem;
+  height: 50px;
+  padding-left: 45px;
+}
+
+.textRed{
+  color:#DE0600;
+}
+
+.SignBody5 .yInputIcon, .yInputIcon2 {
+  width: 15px;
+  position: absolute;
+  bottom: 0.9rem;
+  left: 1rem;
+}
+
+.mty{
+  margin-top:30px;
+}
+
+.SignBody5 .yInputIcon {
+  top: 2.7em;
+  width: 20px;
+  height: 16px;
+}
