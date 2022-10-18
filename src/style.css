@@ -127,8 +127,6 @@ body {
   margin-top: 15px;
 }
 
-
-
 .SignFormBox form .form-group .select {
   padding-left: 38px;
   height: 52px;
@@ -145,8 +143,6 @@ body {
   font-weight: 500;
 }
 
-
-
 .smf{
   font-size: 12px;
 }
@@ -162,6 +158,10 @@ body {
 .rlogo {
   width: 160px;
   margin-bottom: 25px;
+}
+
+.LogoBx{
+  cursor: pointer;
 }
 
 .signWithBtnBx {
@@ -393,9 +393,6 @@ img.fbicn {
   width: 20px;
   height: 16px;
 }
-
-
-
 /*---  Hero Section ---*/
 
 .HeroSectionBody {
@@ -425,7 +422,7 @@ img.fbicn {
   opacity: 0.2;
   background-position-y: bottom;
   /* z-index: -1; */
-  width: 250px;
+  width: 310px;
 }
 
 .navBar, .navBxLinks {
@@ -440,17 +437,21 @@ img.fbicn {
 
 .webLogo{
   width:150px;
-}
+} 
 
 .heroImgBx img {
   width: 100%;
 }
 
+.navBxLinks ul {
+  margin-bottom: 0px;
+}
+
 .navBxLinks ul li {
   text-align: right;
   list-style: none;
+  cursor: pointer;
 }
-
 
 .navBxLinks ul li img {
   width: 16px;
@@ -590,7 +591,7 @@ img.fbicn {
 }
 
 .comDtlInrBx {
-  margin-top: -100px;
+  /* margin-top: -100px; */
   z-index: 999999;
   position: relative;
   background: #fff;
@@ -600,7 +601,6 @@ img.fbicn {
 }
 
 .heroOtpnBx_NBrdr {
-  width: 80%;
   padding-bottom: 0px;
   margin-bottom: 10px;
   padding-right: 85px;
@@ -654,6 +654,61 @@ img.fbicn {
   padding-right: 85px;
 }
 
+.WinMedalF{
+  position: relative;
+}
+
+.WinMedalF::before {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  left: 120px;
+  bottom: 0px;
+  content: ' ';
+  background-image: url('./components/images/firstMedal.png');  background-repeat: no-repeat;
+  width: 60px;
+  /* height: auto; */
+  transform: scale(0.6);
+}
+
+.WinMedalS{
+  position: relative;
+}
+
+.WinMedalS::before {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  left: 120px;
+  bottom: 0px;
+  content: ' ';
+  background-image: url('./components/images/SecondMedal.png');
+  background-repeat: no-repeat;
+  width: 60px;
+  /* height: auto; */
+  transform: scale(0.6);
+}
+
+
+.WinMedalT{
+  position: relative;
+}
+
+.WinMedalT::before {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  left: 120px;
+  bottom: 0px;
+  content: ' ';
+  background-image: url('./components/images/ThirdMedal.png');
+  background-repeat: no-repeat;
+  width: 60px;
+  /* height: auto; */
+  transform: scale(0.6);
+}
+
+
 .prtcptBx {
   text-align: center;
   border-radius: 20px;
@@ -665,6 +720,7 @@ img.fbicn {
   font-size: 15px;
   font-family: 'Inter';
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .prtcptTextBx {
@@ -698,8 +754,12 @@ img.fbicn {
   align-items: end;
 }
 
+.mtN100{
+  margin-top: -100px;
+}
+
 .spacer {
-  height: 180px;
+  height: 40px;
 }
 
 .statusSriped {
@@ -740,13 +800,82 @@ img.fbicn {
   right: 0;
   bottom: 0;
   content: " ";
-  background-image: url(http://localhost:3000/static/media/DANCE.ceae4fd9db1eb24d790e.png);
+  /* background-image: url(http://localhost:3000/static/media/DANCE.ceae4fd9db1eb24d790e.png); */
+  background-image: url('./components/images/DANCE.png');
   background-size: contain;
   position: absolute;
   left: revert;
   background-repeat-x: no-repeat;
   width: 129px;
   height: 80%;
+}
+
+.bgStrokeText_Fashion{
+  position: relative;
+}
+.bgStrokeText_Fashion::after {
+  top: 382px;
+  right: 0px;
+  bottom: 0px;
+  content: " ";
+  background-image: url(http://localhost:3000/static/media/Fashion_Stroke.ae1312a1579a5faa0c64.png);
+  background-size: contain;
+  position: absolute;
+  left: 40px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  z-index: -9999999;
+}
+
+
+.bgStrokeText_Singer{
+  position:relative;
+}
+
+.bgStrokeText_Singer::before {
+  top: 30px;
+  right: -10px;
+  bottom: 0;
+  content: " ";
+  /* background-image: url(http://localhost:3000/static/media/DANCE.ceae4fd9db1eb24d790e.png); */
+  background-image: url(http://localhost:3000/static/media/SInging_Stroke.909725881b903ce997db.png);
+  background-size: contain;
+  position: absolute;
+  left: revert;
+  background-repeat-x: no-repeat;
+  width: 129px;
+  height: 88%;
+}
+
+.bgStrokeText_Dancer{
+  position:relative;
+}
+
+.bgStrokeText_Dancer::before {
+  top: 2rem;
+  right: 0px;
+  bottom: 0;
+  content: " ";
+  /* background-image: url(http://localhost:3000/static/media/DANCE.ceae4fd9db1eb24d790e.png); */
+  background-image: url(http://localhost:3000/static/media/DANCE.ceae4fd9db1eb24d790e.png);
+  background-size: contain;
+  position: absolute;
+  left: -118px;
+  background-repeat-x: no-repeat;
+  width: 320px;
+  height: 84%;
+}
+
+/*-- footer --*/
+
+.footer2 {
+  text-align: center;
+  padding-bottom: 40px;
+  background: #000;
+  color: #5F5F5F;
+  font-family: 'Inter', sans-serif;
+  margin-top: 40px;
 }
 
 .footer {
@@ -758,21 +887,228 @@ img.fbicn {
   margin-top: -70px;
 }
 
-
 .ftrLinks ul {
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
 }
 
 .ftrLinks ul li {
   list-style-type: none;
   margin: 0px 20px;
   cursor: pointer;
+  font-size: 19px;
+}
+
+.ftrLogo img {
+  margin-bottom: 25px;
+  height: 60px;
+  width: auto;
+  margin-top: 35px;
+}
+
+.cpyright p {
+  font-size: 19px;
 }
 
 .ftrLogo, .ftrLinks {
   padding: 20px 0px 15px 10px;
   border-bottom: 0.2px solid #686868;
   line-height: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+
+/*--- Cat Video ---*/
+
+.thumbnailBx {
+  position: relative;
+  height: 100%;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.timeStamp {
+  position: absolute;
+  background: #030303;
+  right: 5%;
+  bottom: 30%;
+  padding: 3px 10px;
+  font-family: inter;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12.8px;
+  border-radius: 5px;
+}
+
+.mbRow40{
+  margin-bottom: 40px;
+}
+
+.thumbnailBx .prsnName {
+  color: #030303;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.thumbnailBx p {
+  margin-bottom: 0;
+  padding-top: 25px;
+  line-height: 0;
+  font-family: inter;
+  font-size: 14px;
+  color: #606060;
+}
+
+.thumbnailBx img {
+  border-radius: 15px;
+  position: relative;  
+  width: 100%;
+}
+
+.CardVdo_mb30{
+  margin-bottom:30px;
+}
+
+.CatVdo_comDtlInrBx {
+  background: #fff;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.brdrBtm {
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.CatVdoMt100{
+  margin-top: 100px;
+}
+
+.CatVdoMt40 {
+  margin-top: 40px;
+}
+
+/*
+ .comDtlInrBx {
+    z-index: 999999;
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: -15px;
+    margin-left: -15px;
+  } 
+*/
+
+.darkGreyText2 {
+  color: #333;
+  font-weight: bolder;
+  font-family: 'Inter';
+}
+
+.Round_Number p{
+  font-size: 19px;
+  font-weight: bolder;
+  color: #333333;
+  font-family: 'Inter';
+}
+
+.Participants_Number {
+  display: flex;
+  justify-content: end;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #333333;
+}
+
+.catVdoProfile {
+  width: 260px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  display: flex;
+  margin-top: -150px;
+  margin-bottom: -70px;
+}
+
+.ImgW20 img{
+  width: 20px!important;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VdoCat_clndrFont {
+  font-size: 22px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.VdoCat_heroTxtBx2 {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.VdoCat_heroOtpnBx {
+  padding-bottom: 20px;
+  /* margin-bottom: 30px; */
+  justify-content: center;
+}
+
+.VdoCat_heroText {
+  margin-top: 60px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.VdoCat_heroTxtBx {
+  margin-top: 70px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.HdrScndCntnrFluid {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.CatVideo_HeroSectionBody {
+  font-family: 'Inter';
+  font-style: normal;
+  background: #000;
+  color: #fff;
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.CatVideo_HeroSection {
+  font-family: 'Inter';
+  font-style: normal;
+  background: #000;
+  color: #fff;
+  padding-bottom: 0px;
+}
+
+.CatVideo_HeroSection::after {
+  background-image: url(http://localhost:3000/static/media/wallpapersden2.db3f85c32c0e7022ab42.png);
+  content: " ";
+  position: absolute;
+  background-size: contain;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  background-position-y: bottom;
+  min-width: 280px;
+  background-position: right;
+}
+
+.catVdo_mt120{
+  margin-top: 120px;
 }
